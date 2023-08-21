@@ -1,0 +1,64 @@
+body {
+    background-color: rgba(186, 248, 250, 0.973);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.publication {
+    background-color: #fff;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    animation: aparecer 1s forwards 0.5s;
+    opacity: 0;
+}
+
+.name {
+    font-size: 1.3em;
+    margin: 0 0 10px;
+}
+
+.content {
+    font-size: .9em;
+    margin: 15px 0;
+}
+
+.comments {
+    display: flex;
+}
+
+.comment {
+    flex-grow: 1;
+    border-radius: 5px;
+    border: 1px solid;
+    padding-left: 10px;
+    outline: none;
+}
+
+.submit {
+    padding: 5px 15px;
+    margin-left: 5px;
+    background-color: rgb(127, 246, 255);
+    border: 1px solid ;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit:active {
+    background-color: rgb(90, 227, 231);
+}
+
+.noMore {
+    color: #858585;
+    text-align: center;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
